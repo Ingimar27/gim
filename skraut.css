@@ -1,0 +1,215 @@
+main, footer, .container {
+    margin: 0.5rem;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+.margin{
+  margin-bottom: 8em;
+  margin-top: 18rem;
+}
+
+.margin2{
+  margin-left: 1em;
+}
+
+
+
+
+.stor{
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.table-container {
+  text-align: center;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+
+.midja{
+  text-align: center;
+}
+
+table tr {
+  padding: .35em;
+}
+
+table td:hover {
+  background-color: gray;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+thead {
+  background-color: lightblue;
+}
+
+th {
+  background: none;
+}
+
+
+    tfoot {
+      background-color: var(--background-banner);
+  }
+
+
+
+
+tr:nth-child(odd) {
+  background-color: var(--nc-d-lk-2);
+}
+
+@media screen and (max-width: 600px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table{
+      margin: 30px;
+  }
+  th{
+      font-style: bold;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.blar{
+    margin: 10px;
+    border: solid blue;
+}
+.bak {
+    background-color: var(--background-banner);
+    width: auto;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5 {
+    display: grid;
+    border: 1px solid var(--nc-bg-2);
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 48rem) {
+    .col-2, .col-4 {
+        grid-template-columns: 1fr 1fr; 
+        gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .col-3, .col-5 {
+        grid-template-columns: 1fr 1fr; 
+        gap: 1rem;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    main, footer {
+        max-width: 100rem;
+        margin: auto;
+    }
+    .col-5 {
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 1rem;
+        row-gap: 1rem;
+        margin: 10px;
+        padding: 1rem; 
+
+    }
+
+    .col-4 {
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 1rem;
+        row-gap: 1rem;
+        margin: 10px;
+        padding: 1rem; 
+    }
+
+    .col-3 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        row-gap: 1rem;
+        margin: 10px;
+        padding: 1rem; 
+    }
+
+
+    .col-2 {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1rem;
+        row-gap: 1rem;
+        padding: 1rem; 
+
+    }
+
+    .col-1 {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+        row-gap: 1rem;
+        align-items: center;
+        margin: 10px;
+        padding: 1rem; 
+        
+    }
+
+    .col-0 {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 1rem;
+        row-gap: 1rem;
+        text-align: center;
+        margin: 10px;
+        padding: 1rem; 
+    }
+
+}
+.icon {
+  /* Basic styling */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  /* Additional styles as needed */
+}

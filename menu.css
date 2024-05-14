@@ -1,0 +1,146 @@
+
+.hat{
+    height: 10em;
+}
+
+.takkar{
+    height: 2em;
+}
+
+.notmaxwidth{
+    max-width: 50em;
+}
+
+.bigcenter{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.bigercenter{
+    text-align: center;
+    font-size: 5em;
+}
+
+
+.outosise{
+    width: outo;
+    margin-left: 0;
+
+}
+
+.topmenu {
+    background-color: var(--nc-ac-1);
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top: 3rem;
+    right: -50rem;
+    width: 80%;
+    z-index: 99;
+    padding: 2rem;
+    transition: all .5s ease-in;
+    color: greenyellow;
+}
+
+
+#toggle:checked ~ .topmenu {
+    right: 0;
+    transition: all .5 ease-in;
+}
+
+.topmenu a {
+    display: block;
+    color: var(--nc-lk-tx);
+    padding: .5rem;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.socials a{
+ display: inline-block;
+}
+
+.menuinput{
+    display: none;
+}
+
+.menulabel {
+    font-size: 2rem;
+    position: fixed;
+    top: .5rem;
+    right: 1rem;
+}
+.menuinput2{
+    display: none;
+}
+
+.menulabel2 {
+    font-size: 2rem;
+    position: fixed;
+    bottom: .50rem;
+    right: 1rem;
+}
+
+
+.menulabel:hover {
+    cursor: pointer;
+}
+
+.bottommenu {
+    background-color: var(--nc-ac-1);
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    bottom: 3rem;
+    right: -75rem;
+    width: 15em;
+    z-index: 99;
+    padding: 0rem;
+    transition: all .5s ease-in;
+
+}
+#toggle3:checked ~ .bottommenu {
+    right: 3rem;
+    transition: all .5 ease-in;
+}
+
+.bottommenu a {
+    display: block;
+    color: var(--nc-lk-tx);
+    padding: .5rem;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+
+
+
+
+.notwide{
+    width: 10em;
+}
+
+
+
+
+
+@media screen and (min-width:48em) {
+    .topmenu {
+        position: relative;
+        flex-flow: row;
+        max-width: 80rem;
+        margin: auto;
+        top:0;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        transition: none;
+    }
+
+    .menulabel{
+        display: none;
+    }
+}

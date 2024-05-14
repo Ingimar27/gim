@@ -1,0 +1,204 @@
+
+
+
+
+
+/* Styles for the overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100; /* Set a higher z-index */
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Styles for the popup */
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: black;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 101; /* Set a higher z-index */
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: greenyellow;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 70%;
+    }
+}
+
+
+
+
+
+a {
+    color: #06D85F; /* Change link color to green */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    color: #0b9242; /* Change link color to a darker green on hover */
+}
+
+
+
+
+
+
+/* (A) HIDE CHECKBOX & CONTENT */
+.a-check {
+  display: none; 
+}
+
+.a-content {
+  max-height: 0;
+  overflow: hidden; 
+}
+
+
+.a-check:checked ~ .a-content {
+  max-height: 500px;
+  overflow: auto; 
+}
+
+.a-content {
+  transition: all 0.5s;
+}
+
+
+.a-tab {
+  max-width: 100%; 
+}
+
+.a-label {
+  display: block; padding: 10px;
+  font-weight: 700; cursor: pointer;
+  color: #fff; background: var(--nc-ac-1);
+  position: relative;
+}
+
+
+.a-label::after {
+  display: block; content: "\25b6";
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+}
+
+
+.a-check:checked ~ .a-content {
+  padding: 10px;
+  background: none;
+}
+
+
+#cbinfo {
+    padding: 10px; margin-top: 40px;
+    font-weight: 700; text-align: center;
+  }
+  #cbinfo a {
+    text-decoration: none; padding: 5px;
+    color: #fff; background: #a91616;
+  }
+
+
+
+
+.logo{
+    text-align: center;
+    font-size: 10em;
+}
+
+
+
+.button-link {
+    display: inline-block;
+    margin-right: 10px; 
+    padding: 50px;
+
+    background-color: var(--nc-ac-1);
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 4px solid black;
+    max-height: 50px;
+    
+  }
+  
+  .button-link:hover {
+    background-color: #0056b3;
+  }
+
+.button-link2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--nc-ac-1);
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 4px solid black;
+  }
+  
+.button-link2:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+  .button-link3 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--nc-ac-1);
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 4px solid black;
+  }
+  
+.button-link:hover {
+    background-color: #0056b3;
+  }

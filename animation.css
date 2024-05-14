@@ -1,0 +1,84 @@
+.move-from-right {
+    width: 40em;
+    height: 40em;
+
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: moveRightToLeft 2s ease-in-out forwards; /* Adjust duration and timing function as needed */
+  }
+  
+  @keyframes moveRightToLeft {
+    from {
+      left: 100%; /* Start from the right */
+    }
+    to {
+      left: 50%; /* Move to the center */
+    }
+  }
+  
+
+
+  .zoom-in {
+
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: zoomInOut 5s ease-in-out forwards;
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    30% {
+        transform: translate(-50%, -50%) scale(0);
+      }
+    50% {
+      transform: translate(-50%, -50%) scale(1.5); 
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+
+  .container {
+    height: 30vh; 
+    overflow: hidden;
+
+
+  }
+  
+  .move-up {
+    animation: moveUp 10s linear infinite; 
+
+    
+
+  }
+  
+  @keyframes moveUp {
+    0%{
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+.box2{
+    width: auto;
+    height: 200px;
+    border: 1px solid black; 
+    padding: 20px;
+    margin: 20px; 
+    background-color: lightgray; 
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+    justify-self: center;
+}
+  
